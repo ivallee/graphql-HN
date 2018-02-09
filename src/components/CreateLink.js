@@ -19,7 +19,7 @@ class CreateLink extends Component {
           placeholder='A description for the link'
         />
         <input
-          classname='mb2'
+          className='mb2'
           value={this.state.url}
           onChange={e => this.setState({ url: e.target.value })}
           type='text'

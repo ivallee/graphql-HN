@@ -37,7 +37,7 @@ class LinkList extends Component {
   }
 }
 
-const FEED_QUERY = gql`
+export const FEED_QUERY = gql`
   # 2
    query FeedQuery {
     feed {
@@ -60,4 +60,5 @@ const FEED_QUERY = gql`
     }
   }
 `;
+
 export default graphql(FEED_QUERY, { name: 'feedQuery' })(LinkList);
